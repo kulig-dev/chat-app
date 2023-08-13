@@ -5,7 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+  <!-- our project just needs Font Awesome Solid + Brands -->
+  <link href="./fontawesome/css/fontawesome.css" rel="stylesheet">
+  <link href="./fontawesome/css/brands.css" rel="stylesheet">
+  <link href="./fontawesome/css/solid.css" rel="stylesheet">
+
   <title>Frontend Mentor | [Challenge Name Here]</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
@@ -15,34 +19,56 @@
   </style>
 </head>
 <body>
+  <main>
+    <section class="chat">
+      <header class="chat__header">
+        <i class="fa-solid fa-angle-left"></i>
+        <img src="./images/avatar.jpg" alt="avatar-image">
+        <div class="status">
+          <h3>Samuel Green</h3>
+          <span>Available to Walk</span>
+        </div>
+        <i></i>
+      </header>
+        <article>
+          <p class="incoming">That sounds great. I’d be happy with that.</p>
+          <p class="incoming">Could you send over some pictures of your dog, please?</p>
+          <div class="chat__images outgoing">
+            <img src="./images/dog-image-1.jpg" alt="dog-image-1">
+            <img src="./images/dog-image-2.jpg" alt="dog-image-2">
+            <img src="./images/dog-image-3.jpg" alt="dog-image-3">
+          </div>
+          <p class="outgoing">Here are a few pictures. She’s a happy girl!</p>
+          <p class="outgoing">Can you make it?</p>
+          <p class="incoming">She looks so happy! The time we discussed works. How long shall I take her out for?</p>
+          <div class="price incoming">
+            <input type="checkbox" name="30minutes" id="30minutes">
+            <label for="30minutes">30 minute walk</label>
+            <span>$29</span>
+          </div>
+          <div class="price incoming">
+            <input type="checkbox" name="1hour" id="1hour">
+            <label for="1hour">1 hour walk</label>
+            <span>$49</span>
+          </div>
+        </article>
+        <footer>
+          <input type="text" name="new" id="new" placeholder="Type a message…">
+          <i class="fa-solid fa-chevron-right"></i>
+        </footer>
+    </section>
+    <section class="description">
+      <header>
+        <h1>Simple booking</h1>
+        <p>
+          Stay in touch with our dog walkers through the chat interface. This makes it easy to 
+          discuss arrangements and make bookings. Once the walk has been completed you can rate 
+          your walker and book again all through the chat.
+        </p>
+      </header>
+    </section>
+  </main>
 
-  Samuel Green
-  Available to Walk
-
-  That sounds great. I’d be happy with that.
-
-  Could you send over some pictures of your dog, please?
-
-  Here are a few pictures. She’s a happy girl!
-
-  Can you make it?
-
-  She looks so happy! The time we discussed works. How long shall I take her out for?
-
-  30 minute walk
-  $29
-
-  1 hour walk
-  $49
-
-  Type a message…
-
-  Simple booking
-
-  Stay in touch with our dog walkers through the chat interface. This makes it easy to 
-  discuss arrangements and make bookings. Once the walk has been completed you can rate 
-  your walker and book again all through the chat.
-  
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
